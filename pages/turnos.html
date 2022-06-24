@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link class="favicon" rel="shortcut icon" href="../assets/img/logo.jpeg" type="image/x-icon">   
+    <title> Doctora Skin</title>
+</head>
+<body class="cuerpo">
+    <nav class="navbar">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="./informacíon.html">Informacíon</a></li>
+            <li><a href="./productos.html">Productos</a></li>
+            <li> <a href="./tratamientos.html">Tratamientos</a></li>
+            <li> <a href="./turnos.html">Turnos</a></li>
+        </ul>
+    </nav>
+    <header class="header"> 
+        <div class="contenedorPrincipal">
+            <div class="principal">
+                <h1 class="principalTitulo"> Doctora Skin </h1>
+                <h2 class="principalSubtitulo"> By Doctora Roxana Amante</h2>
+            </div>
+            <div class="principalImagen">
+                <img src="../assets/img/logo.jpeg" alt="logo">
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="contenedorTurnos">    
+            <h2> Sacá tu turno</h2>
+            <form action="contactos.php" method="get">
+                <h3 class="datosPersonales">Datos personales</h3>
+                <div> 
+                    <h3> Determine su sexo</h3>
+                    <label class="label" for="sexo"> Hombre </label>
+                    <input class="inputRadio" type="radio" name="sexo" value="h">
+                    <label class="label" for="sexo"> Mujer</label>
+                    <input class="inputRadio" type="radio" name="sexo" value="m">
+                    <label class="label" for="sexo"> Otro </label>
+                    <input class="inputRadio" type="radio" name="sexo" value="o">
+                </div>
+                <div>
+                    <input class="input" type="text" name="nombre" id="nombre" placeholder="ingrese su nombre" required>
+                    <input class="input" type="text" name="apellido" id="apellido" placeholder="ingrese su apellido" required>
+                    <input class="input" type="number" name="edad" id="edad" placeholder="ingrese su edad" required>
+                    <input class="input" type="number" name="dni" id="dni" placeholder="ingrese su dni" required>
+                    <input class="input" type="number" name="numerocelular" id="numerocelular" placeholder="ingrese su telefono" required>
+                    <input class="input" type="text" name="correo" id="correo" placeholder="ingrese su correo" required>
+                </div>
+                <div>
+                  <h3>¿Que tratamiento requiere?</h3>
+                    <select class="button" name="tratamientos" id="tratamientos" required>
+                        <option value="t1"> tratamiento 1</option>
+                        <option value="t2"> tratamiento 2</option>
+                        <option value="t3"> tratamiento 3</option>
+                        <option value="t4"> tratamiento 4</option>
+                        <option value="t5"> tratamiento 5</option>
+                        <option value="t6"> tratamiento 6</option>
+                        <option value="t7"> tratamiento 7</option>
+                        <option value="t8"> tratamiento 8</option>
+                    </select>
+                </div>
+                     <h3>Seleccione consultorio</h3>
+                    <label class="label" for="Lugar"> Tucumán</label>
+                    <input class="inputRadio" type="radio" name="Lugar" value="t" required>
+                    <label class="label" for="Lugar"> Buenos Aires</label>
+                    <input class="inputRadio" type="radio" name="Lugar" value="ba" required>
+                <div>
+                    <h3> Seleccione la fecha de su turno</h3>
+                    <input class="input" type="number" name="hora" id="hora" placeholder="hora" required>
+                    <input class="input" type="number" name="dia" id="dia" placeholder="dd" required>
+                    <input class="input" type="number" name="mes" id="mes" placeholder="mm" required>
+                    <input class="input" type="number" name="anio" id="anio" placeholder="año" required>
+                </div>
+                <input class="button" type="submit" name="enviar" id="">
+                <input class="button" type="reset" name="borrar todo">
+            </form>
+        </div>    
+    </main>
+    <footer class="pie"> 
+        <h5 class="pieTitulo">
+            redes sociales: 
+        </h5>
+        <div class="pieTitulo">
+            <a href="https://www.instagram.com/draroxanaamante/"><img src="../assets/img/insta-01.png" alt="redsocial">Doctora Roxana Amante</a>
+        </div>
+        <div class="pieTitulo"> 
+            <a href="https://www.instagram.com/dra_skin_/"><img src="../assets/img/insta-01.png" alt="">Doctora Skin</a>
+        </div>
+        <h6 class="cp"> © todos los derechos reservados Dra Roxana Amante</h6>
+     </footer>
+</body>
+</html>
