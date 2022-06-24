@@ -1,0 +1,742 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.favicon{
+    width: 12px;
+}
+.cuerpo{
+    background-color:#ffe9da ;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "navbar navbar navbar navbar"
+                          "header header header header"
+                          "main main main main"  
+                          "pie pie pie pie";                      
+}
+a{ 
+    text-decoration: none;
+}
+.header{
+    grid-area: header;
+}
+.contenedorPrincipal{
+    display: flex;
+    align-items: center;
+    width: 99%;
+}
+.principalImagen img{
+    width: 70px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.principal{
+    width: 30%;
+    margin-left: 37%;
+}
+.principalTitulo{
+    margin-top: 15px;
+    font-size: 50px;
+    text-align: center;
+    color: #D45F55;
+    font-family: 'Montserrat', sans-serif;
+}
+.principalSubtitulo{
+    margin-top: 5px;
+    font-size: 30px;
+    text-align: center;
+    color: #D45F55;
+    font-family: 'Montserrat', sans-serif; ;
+}
+.navbar{
+    grid-area: navbar;
+    background-color:#d4927c;
+    position: sticky;
+    font-family: 'Montserrat', sans-serif; ;
+    border: white 2px solid;
+    border-radius: 10px;
+}
+.navbar ul{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navbar ul li{
+    list-style: none;
+    padding: 9px;
+    margin-top: 2px;
+    font-size: 20px;
+    border-right: 2px solid white;
+
+}
+.navbar ul li a{
+    color: white;
+}
+.main{
+    grid-area: main;
+}
+.tarjeta{
+    width: 45%;
+    margin: 15px;
+    border: white 4px solid;
+    border-radius: 10px;  
+}
+.tarjeta__nombre{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif; 
+    color: #D45F55; 
+    margin: 5px;
+}
+.tarjeta__tratamiento{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif; 
+    color: #D45F55; 
+    margin: 7px;
+}
+.tarjeta__img{
+   width: 95%; 
+   margin: 15px;
+   height: 30rem;
+}
+.tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.quienSoy{
+    display: flex;
+    flex-direction: column;
+}
+.quienSoy h3{
+    font-size: 40px;
+    color: #D45F55	;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}
+.quienSoy p{
+    font-size: 25px;
+    color: #D45F55;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}
+.quienSoy img{
+    width: 30rem;
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 30%;
+    justify-content: center;
+}
+.pie{
+    grid-area: pie;
+    margin: 20px;
+    padding: 20px;
+}
+.pieTitulo{
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif; 
+    color: #D45F55; 
+    margin: 5px;
+}
+.pieTitulo a{
+    color: #D45F55;
+}
+.cp{
+    color: #D45F55;
+    font-size: 10px;
+}
+.Cexperiencia{
+    margin: 5px;
+}
+.experiencia{
+    font-size: 40px;
+    color: #D45F55	;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}
+.experienciaP{
+    font-size: 25px;
+    color: #D45F55;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}
+.experienciaP a{
+    color: #D45F55;
+}
+.contenedorExperiencia ul li a{
+    padding: 9px;
+    margin-top: 5px;
+    font-size: 20px; 
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    list-style: none;
+}
+.contenedorExperiencia ul li {
+    list-style: none;
+}
+.tituloConsultorio{
+    font-size: 40px;
+    color: #D45F55;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}
+.contenedorConsultorio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.consultorio{
+    width: 45%;
+    height: 600px;
+    margin: 15px;
+    border-radius: 10px;
+    border: white 4px solid;
+}
+.mapasConsultorio{
+    width: 95%; 
+    margin: 15px;
+    height: 85%;
+}
+.ubicacionConsultorio{
+    font-size: 30px;
+    color: #D45F55;
+    padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.button {
+    margin: 15px;
+    background-color: #d4927c;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+.button a{
+    color: whitesmoke;
+}
+.tratamientos{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 5px;
+}
+.tratamientosTitulo{
+    font-size: 40px;
+    color: #D45F55;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}
+.tratamiento{
+    margin: 10px;
+}
+.tratamiento h2{
+    font-size: 35px;
+    color: #D45F55;
+    font-family: 'Montserrat', sans-serif;
+}
+.tratamiento h3{
+    font-size: 30px;
+    color: #D45F55;
+    font-family: 'Montserrat', sans-serif;
+}
+.tratamiento p{
+    font-size: 25px;
+    color: #D45F55;
+    font-family: 'Montserrat', sans-serif;
+}
+.tratamiento img{
+    width: 50%;
+    margin-top: 10px;
+    height: 25rem;
+}
+.contenedorTurnos{
+    border: 4px solid white;
+    border-radius: 10px;
+    color: #D45F55;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+    width: 97%;
+}
+.contenedorTurnos h2{
+    font-size: 40px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.datosPersonales{
+    font-size: 30px;
+    margin-left: 10px;
+    padding: 5px;
+}
+.contenedorTurnos form h3{
+    font-size: 25px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.label{
+    font-size: 20px;
+    margin-left: 15px;
+    padding: 5px;
+}
+.input{
+    margin: 15px;
+    background-color: #d4927c;
+    font-size: 20px;
+    color: #D45F55;
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 5px;
+}
+::placeholder{
+    color: white;
+}
+input[type=radio] {
+    height: 15px;
+    width: 5%;
+}
+.misProductos{
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif; 
+    color: #D45F55; 
+    margin: 5px;
+}
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.producto{
+    width: 30%;
+    margin: 10px;
+    border: white 4px solid;
+    border-radius: 10px; 
+    text-align: center;
+}
+.productoTitulo{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif; 
+    color: #D45F55; 
+    margin: 5px;
+    
+}
+.productoImg{
+    width: 95%; 
+   margin: 10px;
+   height: 50%;
+}
+.productoDes{
+    text-align: left;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif; 
+    color: #D45F55; 
+    margin: 7px;
+}
+.productoPrecio{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif; 
+    color: #D45F55; 
+    margin: 7px;
+}
+@media (min-width: 1250px){
+    .tarjeta{
+        width: 30%;
+    }
+    .tarjeta__img{
+        width: 95%; 
+        height: 30rem;
+        padding-right: 15px;
+    }
+    .quienSoy img{
+        width: 35rem;
+        justify-content: center;
+    }
+    .consultorio{
+        width: 45%;
+        height: 41rem;
+    }
+    .producto{
+        width: 23%;
+    }
+    .productoImg{
+       padding-right:10px ; 
+       height: 27rem;
+    }
+    .tratamiento img{
+        width: 50%;
+        height: 26rem;
+    }
+}
+@media (max-width: 992px){
+    .principalImagen img{
+        width: 70px;
+    }
+    .principalTitulo{
+        font-size: 46px;
+    }
+    .principalSubtitulo{
+        font-size: 26px;
+    }
+    .tarjeta{
+        width: 44%;
+    }
+    .tarjeta__img{
+        width: 95%; 
+        height: 25rem;
+        padding-right: 15px;
+    }
+    .tarjeta__nombre{
+        font-size: 26px;
+    }
+    .tarjeta__tratamiento{
+        font-size: 26px;
+    }
+    .quienSoy h3{
+        font-size: 36px;
+    }
+    .quienSoy p{
+        font-size: 25px;
+    }
+    .quienSoy img{
+        width: 30rem;
+        justify-content: center;
+    }
+    .experiencia{
+        font-size: 36px;
+    }
+    .experienciaP{
+        font-size: 25px;
+    }
+    .tituloConsultorio{
+        font-size: 38px;
+    }
+    .consultorio{
+        width: 45%;
+        height: 38rem;
+    }
+    .mapasConsultorio{
+        width: 95%; 
+        padding-right: 15px;
+        height: 80%;
+    }
+    .ubicacionConsultorio{
+        font-size: 25px;
+        padding-bottom: 5px;
+    }
+    .misProductos{
+        font-size: 33px;
+    }
+    .producto{
+        width: 30%;
+    }
+    .productoTitulo{
+        font-size: 20px; 
+    }
+    .productoImg{
+       padding-right:10px ; 
+       height: 24rem;
+    }
+    .productoDes{
+        font-size: 18px;
+    }
+    .productoPrecio{
+        font-size: 25px;
+    }
+    .tratamientosTitulo{
+        font-size: 36px;
+    }
+    .tratamiento h2{
+        font-size: 33px;
+    }
+    .tratamiento h3{
+        font-size: 28px;
+    }
+    .tratamiento p{
+        font-size: 26px;
+    }
+    .tratamiento img{
+        width: 50%;
+        height: 23rem;
+    }
+    .contenedorTurnos h2{
+        font-size: 36px;
+    }
+    .datosPersonales{
+        font-size: 30px;
+        margin-left: 10px;
+        padding: 5px;
+    }
+    .contenedorTurnos form h3{
+        font-size: 26px;
+    }
+    .label{
+        font-size: 21px;
+    }
+    .input{
+        font-size: 21px;
+    }
+    input[type=radio] {
+        height: 15px;
+    }
+    .button{
+        font-size: 23px;
+    }
+    .navbar ul li{
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px){
+    .principalImagen img{
+        width: 70px;
+    }
+    .principalTitulo{
+        font-size: 43px;
+    }
+    .principalSubtitulo{
+        font-size: 23px;
+    }
+    .tarjeta{
+        width: 43%;
+    }
+    .tarjeta__img{
+        width: 95%; 
+        height: 22rem;
+        padding-right: 15px;
+     }
+     .tarjeta__nombre{
+        font-size: 23px;
+    }
+    .tarjeta__tratamiento{
+        font-size: 23px;
+    }
+    .quienSoy h3{
+        font-size: 33px;
+    }
+    .quienSoy p{
+        font-size: 23px;
+    }
+    .quienSoy img{
+        width: 22rem;
+        justify-content: center;
+    }
+    .experiencia{
+        font-size: 33px;
+    }
+    .experienciaP{
+        font-size: 23px;
+    }
+    .tituloConsultorio{
+        font-size: 35px;
+    }
+    .consultorio{
+        width: 45%;
+        height: 33rem;
+    }
+    .mapasConsultorio{
+        width: 95%; 
+        padding-right: 15px;
+        height: 80%;
+    }
+    .ubicacionConsultorio{
+        font-size: 23px;
+        padding-bottom: 5px;
+    }
+    .misProductos{
+        font-size: 33px;
+    }
+    .producto{
+        width: 30%;
+    }
+    .productoTitulo{
+        font-size: 16px; 
+    }
+    .productoImg{
+       padding-right:10px ; 
+       height: 20rem;
+    }
+    .productoDes{
+        font-size: 15px;
+    }
+    .productoPrecio{
+        font-size: 23px;
+    }
+    .tratamientosTitulo{
+        font-size: 33px;
+    }
+    .tratamiento h2{
+        font-size: 30px;
+    }
+    .tratamiento h3{
+        font-size: 26px;
+    }
+    .tratamiento p{
+        font-size: 23px;
+    }
+    .tratamiento img{
+        width: 50%;
+        height: 20rem;
+    }
+    .contenedorTurnos h2{
+        font-size: 33px;
+    }
+    .datosPersonales{
+        font-size: 28px;
+        margin-left: 10px;
+        padding: 5px;
+    }
+    .contenedorTurnos form h3{
+        font-size: 23px;
+    }
+    .label{
+        font-size: 18px;
+    }
+    .input{
+        font-size: 18px;
+    }
+    input[type=radio] {
+        height: 17px;
+    }
+    .button{
+        font-size: 21px;
+    }
+    .navbar ul li{
+        font-size: 20px;
+    }
+}
+@media (max-width: 599px){
+    .contenedorPrincipal{
+        justify-content: space-around;
+    }
+    .principalImagen img{
+        width: 60px;
+        margin-right: 40px;
+    }
+    .principalTitulo{
+        font-size: 40px;
+    }
+    .principalSubtitulo{
+        font-size: 20px;
+    }
+    .tarjeta{
+        width: 40%;
+    }
+    .tarjeta__img{
+        width: 95%; 
+        height: 18rem;
+        padding-right: 15px;
+     }
+     .tarjeta__nombre{
+        font-size: 22px;
+    }
+    .tarjeta__tratamiento{
+        font-size: 22px;
+    }
+    .quienSoy h3{
+        font-size: 30px;
+    }
+    .quienSoy p{
+        font-size: 20px;
+    }
+    .quienSoy img{
+        width: 18rem;
+        margin-left: 23%;
+    }
+    .experiencia{
+        font-size: 30px;
+    }
+    .experienciaP{
+        font-size: 20px;
+    }
+    .tituloConsultorio{
+        font-size: 30px;
+    }
+    .consultorio{
+        width: 43%;
+        height: 27.5rem;
+    }
+    .mapasConsultorio{
+        width: 90%; 
+        padding-right: 15px;
+    }
+    .ubicacionConsultorio{
+        font-size: 20px;
+    }
+    .misProductos{
+        font-size: 30px;
+    }
+    .producto{
+        width: 44%;
+    }
+    .productoTitulo{
+        font-size: 15px; 
+    }
+    .productoImg{
+       padding-right:10px ; 
+       height: 20rem;
+    }
+    .productoDes{
+        font-size: 13px;
+    }
+    .productoPrecio{
+        font-size: 20px;
+    }
+    .tratamientosTitulo{
+        font-size: 30px;
+    }
+    .tratamiento h2{
+        font-size: 27px;
+    }
+    .tratamiento h3{
+        font-size: 23px;
+    }
+    .tratamiento p{
+        font-size: 20px;
+    }
+    .tratamiento img{
+        width: 50%;
+        height: 18rem;
+    }
+    .contenedorTurnos h2{
+        font-size: 30px;
+    }
+    .datosPersonales{
+        font-size: 25px;
+        margin-left: 10px;
+        padding: 5px;
+    }
+    .contenedorTurnos form h3{
+        font-size: 20px;
+    }
+    .label{
+        font-size: 15px;
+    }
+    .input{
+        font-size: 15px;
+    }
+    input[type=radio] {
+        height: 12px;
+    }
+    .button{
+        font-size: 18px;
+    }
+    .navbar ul li{
+        font-size: 15px;
+    }
+    .navbar ul li:nth-child(5){
+        border-right: 0;
+    }
+}
+
+
+
